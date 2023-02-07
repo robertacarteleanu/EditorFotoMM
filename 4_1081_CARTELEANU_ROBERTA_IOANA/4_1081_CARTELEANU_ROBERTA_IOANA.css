@@ -1,0 +1,24 @@
+ #histograma{
+    margin-right: 15px;
+    margin-bottom: 15px;
+    max-width: 300px;
+    max-height: 200px;
+  }
+  
+#div1{
+  float: left;
+}
+.div{
+  float: left;
+  margin-left: 30px;
+}
+body{
+  background-image: url("media/picture1.jpg");
+}
+#canvas{
+  /* background-color:#FFCDB2; */
+  background-image: url("media/Upload.png");
+}
+#histograma{
+  background-color:gainsboro;
+}

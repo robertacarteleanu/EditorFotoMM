@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="4_1081_CARTELEANU_ROBERTA_IOANA.css">
+    <link rel="shortcut icon" href="#">
+    <title>4_1081_CARTELEANU_ROBERTA_IOANA</title>
+</head>
+
+<body>
+    <div id="div1">
+        <p><input type="file" accept="image/*" name="image" id="file" style="display: none;"></p>
+        <p><label for="file" style="cursor: pointer;">Incarca imagine (Click me!)</label></p>
+        <canvas id="canvas" width="1000" height="535" style="border:2px solid #000000;"></canvas>
+        <br>
+        <button id="download">Salveaza imagine</button>
+    </div>
+    <div class="div">
+        
+            <p>Histograma</p>
+            <canvas id="histograma" width="480" height="480" style="border:2px solid #000000;"></canvas>
+        <br>
+            <p>Alege filtrul:</p>
+            <button id="btnSepia" onclick="filter('sepia')">Sepia</button>
+            <button id="btnInvert" onclick="filter('inverted')">Invert</button>
+            <button id="btnGrayScale" onclick="filter('albNegru')">Alb-negru</button>
+            <br>
+            <button id="btnReset">Reset</button>
+            <form>
+                <br>
+                <p><label id="btnAdaugaText" style="cursor: pointer;">Adauga text:</label>
+                    <input id="textAdaugat" type="text">
+                    <label>Culoare:</label>
+                    <input id="culoareText" type="color">
+                </p>
+                <p><label>Dimensiune:</label>
+                    <input id="dimText" type="number">
+                </p>
+                <p>
+                    <label>x:</label>
+                    <input id="pozXText" type="number">
+                    <label>y:</label>
+                    <input id="pozYText" type="number">
+                </p>
+                <p id="adaugaretextxvalues">Se calculeaza valoarea lui x ...</p>
+                <p id="adaugaretextyvalues" style="display:hidden ;">Se calculeaza valoarea lui y ...</p>
+            </form>
+            <button id="stergereSelectie">Stergere selectie</button> 
+    </div>
+    <script src="4_1081_CARTELEANU_ROBERTA_IOANA.js"></script>
+</body>
+
+</html>
